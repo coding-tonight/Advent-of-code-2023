@@ -1,4 +1,4 @@
-""" my attempt to the advent of code day 1 question 
+""" my attempt to the advent of code day 1 question  part 1
 """
 import re
 from pathlib import Path
@@ -43,4 +43,13 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    main()
+
+
+# second solution
+
+# with open(BASE_DIR / 'calibration-document.txt', "r") as f:
+#     ls = f.read().split("\n")
+
+# ns = [n for l in ls for n in [re.findall(r"[0-9]", l)]]
+# print(sum(int(n[0] + n[-1]) for n in ns))
